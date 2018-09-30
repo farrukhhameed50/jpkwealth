@@ -1,0 +1,7 @@
+{
+  "name": "JPKWealth",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
