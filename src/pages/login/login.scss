@@ -1,0 +1,77 @@
+page-login {
+
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {margin-top: 30%;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 0px -8px #5DBCD2
+}
+
+button {
+    background-color: #5DBCD2;
+    color: white;
+    padding: 10px 20px ;
+    font-size: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 35%;
+    height: 45px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button a {
+    color: white;
+}
+
+
+.imgcontainer {
+    padding-top: 8px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    margin-top: 40px;
+    padding: 16px;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #5DBCD2;
+    }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+       text-decoration: none;
+    }  
+}

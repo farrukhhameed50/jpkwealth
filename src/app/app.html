@@ -1,1 +1,26 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+
+	<ion-content>
+    <ion-navbar color="primary">
+      <ion-title>
+        Choose
+      </ion-title>
+    </ion-navbar>
+		<ion-list>
+			 <button ion-item menuClose (click)="openPage('HomePage')">
+				Home
+			</button>
+			<button ion-item menuClose (click)="openPage('NewsPage')">
+				News
+			</button>
+			<button ion-item menuClose (click)="openPage('TutorialsPage')">
+				Tutorials
+			</button>
+      <button ion-item menuClose (click)="logout()">
+				Logout
+			</button>
+		</ion-list>
+	</ion-content>
+
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>

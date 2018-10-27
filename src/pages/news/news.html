@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      News
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<div class="">   
+  <div *ngFor="let iNews of news">
+    <h3>{{iNews.title}}</h3>
+    <table class="table_ico_calendar">
+      <tr>
+        <td style="padding: 5px; text-align: justify;">{{iNews.news}}</td>
+      </tr>
+    </table>
+    <img src="{{iNews.img_url}}" style="margin-top: 10px" width="100%"/>
+    <br/>
+    <div class="box">
+      <a id="date" href="#" style="float: right;">{{iNews.news_date}}</a>
+      <br/>
+    </div>
+  </div>
+</div>
+</ion-content>

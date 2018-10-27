@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "951513811666",
+    "firebase_url": "https://jpkwealth-mkpeers.firebaseio.com",
+    "project_id": "jpkwealth-mkpeers",
+    "storage_bucket": "jpkwealth-mkpeers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951513811666:android:abb9f7d1166f518c",
+        "android_client_info": {
+          "package_name": "com.mkpeers.jpkwealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951513811666-aumd13n5vi3dl1nulveqj18i7vkicitq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSHrJy3ZDA1sDvvRVzt1oQwTsEfhHcOIs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

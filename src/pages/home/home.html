@@ -1,14 +1,39 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+ 
+<ion-content class="home" padding>
+<div class="container" style="height: 100%; margin-top: 0px;" *ngIf="toHold != null">
+  <label>Currency to Hold</label>
+  <br/><br/>
+  <div id="Ethereum_main">
+    <span id="Ethereum" style="vertical-align: middle;"><img src="{{toHold.icon}}" width="20px" height="26px" style="vertical-align: middle;">{{toHold.name}}</span>
+    <div id="Ethereum_sub">
+      <span class="span"><strong>${{toHold.rate}}</strong></span><br/>
+      <span class="span">Bought on {{bDate}}</span><br/>
+      <span class="span">@54107</span>
+    </div>
+  </div>
+  <br/><br/>
+  <label>Other Currencies</label>
+  <br/>
+  <table style="height: 60%">
+    <tr *ngFor="let other of others">
+      <th><img src="{{other.icon}}" width="16px" height="16px" style="vertical-align: middle;"> 
+        <span style="vertical-align: middle;">{{other.name}}</span>
+        <span class="span" style="vertical-align: middle;">${{other.rate}}</span>
+      </th>
+    </tr>
+  </table>
+  <br/><br/>
+  <!--<label style="display: block; width=100%; text-align: center;">Return on $10,000 Investment</label>-->
+  <img src="http://jpkwealth.net/chart.png" width="100%" height="50%"/>
+</div>
 </ion-content>
